@@ -35,7 +35,7 @@ My research interests primarily lie in application of Machine Learning in daily 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resume</h3>
 
-<p>Here is the <a href = "https://drive.google.com/file/d/0B_KOTVXcdZOQNEFKcmdZV1RBb0U/view?usp=sharing" target="_blank">PDF </a> version of my Resume. A detailed Curriculum Viate is given below.</p>
+<p>Here is the <a href = "https://drive.google.com/file/d/0B_KOTVXcdZOQNmRMRXd1NW9fODQ/view?usp=sharing" target="_blank">PDF </a> version of my Resume. A detailed Curriculum Viate is given below.</p>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
@@ -70,7 +70,7 @@ Hierarchy Process (AHP) and provide a criteria to judge between the two platform
 <b> <a href="https://pvskand.github.io/Visualizations">Mathematical Visual Simulators</a>, </b> (May, 2016 - July, 2016) <br> 
   
 Developed a GUI version of Singular Value Decomposition, Gradient Descent and Lagrange Multipliers de-
-picting their geometrical interpretation. Chart.js, Plotly.js, Numeric.js and Algebra.js libraries were used to
+picting their geometrical interpretation. Chart.js, Plotly.js, Numeric.js and <href a = "http://algebra.js.org/">Algebra.js libraries were used to
 develop the tool.
 <br>
 </p>
