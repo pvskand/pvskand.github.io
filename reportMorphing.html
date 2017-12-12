@@ -1,0 +1,76 @@
+<html>
+<title>
+Report
+</title>
+<body>
+
+<center>
+<h1> Lab 4 (Morphing) Report </h1>
+<h3> Aakarshan Gupta (2014CSB1001) | Skand Vishwanath Peri (2014CSB1034) </h3>
+</center>
+<hr/>
+
+<center><h1>Morphing of 2 images</h1></center>
+<p>
+In this we have morphed 2 images by using the <strong>Delaunay Triangulation</strong> technique. <br>
+<center><img src="ReportImages/animate.gif"  "></center>
+<br>
+In order to achieve this we had followed the following steps.
+<br>
+<h2><strong>Step 1</strong></h2>
+First we manually marked the tie points on both the image. These points are one to one mapping form the source image to the destination image.
+
+
+<h2><strong>Step 2</strong></h2>
+Then we had done the Delaunay Triangulation in both the images. For this we had used the openCV inbuilt function.<br>
+<code>subdiv.getTriangleList(triangleList);</code>
+<br>
+We had maintained a list of triangles in order for both the source image and the destination image. Here are the images of the source and destination with triangulation. <br> <br>
+<center>
+<img src="ReportImages/Delaunay_Triangulation.jpg"  ">
+<img src="ReportImages/Delaunay_Triangulation_1.jpg"  ">
+</center>
+
+
+<h2><strong>Step 3</strong></h2>
+Calculate the &alpha; average of the source and destination image to get the morphed image. &alpha; average is
+For every pixel corresponding in source image (<i>x<sub>i</sub>, y<sub>i</sub></i>) and every pixel in the destination image (<i>x<sub>j</sub>, y<sub>j</sub></i>), we find out the coordinates of the morphed image.
+<strong>
+(<i>x<sub>morph</sub>,y<sub>morph</sub></i>) = (1-<i>&alpha;</i>)* (<i>x<sub>i</sub>, y<sub>i</sub></i>) + <i>&alpha;</i>* (<i>x<sub>j</sub>, y<sub>j</sub></i>)</strong>.
+<br>
+Note that when &alpha; is 0, the morphed image is same as the source image and when &alpha; is 1, the morphed image is the destination image. So as we vary &alpha;, we get the transition image.
+
+
+<h2><strong>Step 4</strong></h2>
+Now we had found the triangulation list in the morphed image as well, by mapping it to the source image. After this we find the affine transformation from the source image to the morphed image and also the transformation from destination image to the morphed image.
+
+<h2><strong>Step 5</strong></h2>
+For every pixel in source image, we find to which triangle it belongs to and then apply the affine transformation, and hence get the warped image corresponding to the source image.
+Similarly we find out the warped image corresponding to the destination image.
+
+<h2><strong>Step 6</strong></h2>
+Now we apply the final step i.e the &alpha; average of the intensities of the warped image.
+
+<strong>
+Morphed(<i>x<sub>morph</sub>,y<sub>morph</sub></i>) = (1-<i>&alpha;</i>)* SourceWarp(<i>x<sub>i</sub>, y<sub>i</sub></i>) + <i>&alpha;</i>*DestinationWarp (<i>x<sub>j</sub>, y<sub>j</sub></i>)</strong>.
+<br>
+
+This process is continued for increasing values of &alpha; so the we can see the transition form the source image to the destination image.
+
+<br> <br>
+Another example is shown below. <br>
+<center><img src="ReportImages/animate1.gif"  "></center>
+<br> <br>
+<hr />
+<hr />
+
+<center><h1>Morphing of 3 images</h1></center>
+In this we are morphing from first image to the second image and then from the second image to the third image. The process is exactly same as mentioned above.
+<br>
+Here is the sample output: 
+<center><img src="ReportImages/three.gif"  "></center>
+</p>
+
+</body>
+
+</html>
