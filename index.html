@@ -63,7 +63,7 @@
   <title>Skand Vishwanath Peri</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
-  
+
   <!-- Scramble Script by Jeff Donahue -->
   <script src="js/scramble.js"></script>
   </head>
@@ -75,6 +75,7 @@
       <tr>
         <td width="67%" valign="middle">
         <p align="center">
+          <script type="text/javascript" src="js/hidebib.js"></script>
           <name>Skand Vishwanath Peri</name><br>
           <b>Email</b>:
           <font id="email" style="display:inline;">
@@ -89,22 +90,34 @@
         <p>I am a final year undergraduate studying in Computer Science at <a href="http://www.iitrpr.ac.in/">Indian Institute of Technology, Ropar, India</a>.
         </p>
         <p>
-          I am currently doing my B.Tech Thesis in the field of Heterogenous Face Recognition and am being guided by <a href="http://cse.iitrpr.ac.in/ckn/index.html" target="_blank">Dr. C.K. Narayanan</a>. 
+          I am currently doing my B.Tech Thesis in the field of Heterogenous Face Recognition and am being guided by <a href="http://cse.iitrpr.ac.in/ckn/index.html" target="_blank">Dr. C.K. Narayanan</a>.
           I also interned at <a href="http://val.serc.iisc.ernet.in/valweb/" target="_blank">Video Analytics Lab, IISc Bangalore</a> under <a href="http://www.serc.iisc.ernet.in/~venky/" target="_blank">Dr. R.Venkatesh Babu</a> during Summer 2017 and worked on HDR Deghosting.
         </p>
 
         <p align=center>
-          
+
           <a href="cv/cv.pdf" &nbsp/&nbsp>CV</a> &nbsp/&nbsp
           <a href="http://www.github.com/pvskand" target="_blank"> Github </a>&nbsp/&nbsp
           <a href="http://www.twitter.com/pvskand" target="_blank"> Twitter </a>
         </p>
         </td>
-        <td width="33%">
+        <td width="33%">css
         <img src="images/skand-circle.png" width="100%">
         </td>
       </tr>
       </table>
+
+      <!-- NEWS -->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr><td>
+          <heading>News</heading>
+          <ul>
+            <li> <a href="#CVPRW18">Paper</a> on Disguised Face Verification in the Wild accepted at CVPRW on <a href="http://iab-rubric.org/DFW/dfw.html"> Disguised Faces in the Wild, 2018 </a>  </li>
+          </ul>
+        </td></tr>
+      </table>
+
+      
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td width="100%" valign="middle">
@@ -120,7 +133,7 @@
       <tr>
         <td width="100%" valign="middle">
           <heading>Affiliations</heading>
-          
+
           <p>
           <a href="http://iitrpr.ac.in"><img src="images/iitrprlogo.jpg" width="100" hspace="50"> </a>
           <a href="http://iisc.ac.in/"><img src="images/iisc.jpg" width="100" hspace="50"> </a>
@@ -129,9 +142,54 @@
         </td>
       </tr>
       </table>
-  
-  	
-      
+
+
+
+
+      <!-- PUBLICATIONS -->
+
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr><td><heading>Publications</heading></td></tr>
+        </table>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+            <tr>
+              <td width="33%" valign="top" align="center"><img src="images/disguisenet.jpg" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
+              <td width="67%" valign="top">
+                <p id="CVPRW18">
+                <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+                <heading style="color:#1772d0;">DisguiseNet : A Contrastive Approach for Disguised Face Verification in the Wild</heading></a><br>
+                <strong>Skand Vishwanath Peri</strong>, Abhinav Dhall<br>
+                <em>IEE Conference on Computer Vision and Pattern Recognition, Workshop on Disguised Faces in the Wild (CVPRW)</em>, 2018<br>
+                <!-- <strong style="color:red">Oral presentation <a href="https://vimeo.com/237270588" target="_blank" style="color:red">[video]</a></strong> -->
+                <!-- <strong style="color:red">Oral presentation</strong> -->
+                </p>
+
+                <div class="paper" id="cvprw18">
+                <a href="javascript:toggleblock('cvprw18_abs')">abstract</a> |
+                <a shape="rect" href="javascript:togglebib('cvprw18')" class="togglebib">bibtex</a> |
+                <a href="https://arxiv.org/abs/1804.09669" target="_blank">arXiv</a>
+                <br>
+
+                <p align="justify"> <i id="cvprw18_abs">This paper describes our approach for the Disguised Faces in the Wild (DFW) 2018 challenge. The task here is to verify the identity of a person among disguised and impostors images. Given the importance of the task of face verification it is essential to compare methods across a common platform. Our approach is based on VGG-face architecture paired with Contrastive loss based on cosine distance metric. For augmenting the data set, we source more data from the internet. The experiments show the effectiveness of the approach on the DFW data. We show that adding extra data to the DFW dataset with noisy labels also helps in increasing the generalization performance of the network. The proposed network achieves 27.13% absolute increase in accuracy over the DFW baseline.</i></p>
+
+                <pre xml:space="preserve">
+                @inproceedings{periCVPRW,
+                    Author = {Peri, Skand V. and
+                    Dhall, Abhinav},
+                    Title = {DisguiseNet : A Contrastive Approach for Disguised Face Verification in the Wild},
+                    Booktitle = {IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+                    Year = {2018}
+                }
+                </pre>
+                </div>
+              </td>
+            </tr>
+      </table>
+
+
+
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td>
@@ -141,14 +199,14 @@
       </table>
       <table width="100%" align="center" border="0" cellpadding="20">
       <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle>HDR Deghosting</papertitle>  (Summer 2017)
-          
+
           <br>
-          Mentor : <a href="http://www.serc.iisc.ernet.in/~venky/">Dr R.Venkatesh Babu</a>, Dept. of Computational and Data Sciences, IISc Bangalore, India 
+          Mentor : <a href="http://www.serc.iisc.ernet.in/~venky/">Dr R.Venkatesh Babu</a>, Dept. of Computational and Data Sciences, IISc Bangalore, India
         <p>
           My work at IISc was focussed mainly on generating Deghosted High Dynamic Range images. I spent the initial half of my internship on segmenting moving objects in varying illumination images and the rest half was spent on registering images under high illumination variance.
 
@@ -157,13 +215,13 @@
         </td>
       </tr>
       <tr>
-        
+
         <td width="75%" valign="top">
         <p>
           <a href="https://pvskand.github.io/Visualizations">
           <papertitle>Mathematical Visual Simulators</papertitle> </a> (Summer 2016)
-          
-          
+
+
           <br>
           Mentor : <a href="http://cse.iitrpr.ac.in/ckn/home.html">Dr C.K.Narayanan</a>, Dept. of CS, IIT Ropar
         <p>
@@ -186,48 +244,48 @@
       <table  width="100%" align="center" border="0" cellpadding="20">
       <h3>Bio Medical Image Processing</h3>
         <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle>Alzhemizer's Classification using MRI and PET images</papertitle>  (November, 2017) <i> [Course Final Project]</i>
-          
+
           <br>
           Mentor : <a href="http://www.iitrpr.ac.in/cse/bathula">Dr. Deepti.R.Bhatula </a>, Dept. of CS, IIT Ropar, India
         <p>
-          In this project a localised deep neural net based architecture with 3D Convolution to predict if the has Alzhemizer's Disease  using  PET/MRI scans of the person's brain was proposed. [ Code will be made public once the corresponding paper is published. ] 
+          In this project a localised deep neural net based architecture with 3D Convolution to predict if the has Alzhemizer's Disease  using  PET/MRI scans of the person's brain was proposed. [ Code will be made public once the corresponding paper is published. ]
         </p>
         </p>
         </td>
       </tr>
 
       <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle><a href="https://github.com/pvskand/NLMeansSpeckleFilter"> Nonlocal Means-Based Speckle Filtering for Ultrasound Images</papertitle>  </a>(September, 2017)
-          
+
           <br>
           Mentor : <a href="http://www.iitrpr.ac.in/cse/bathula">Dr. Deepti.R.Bhatula </a>, Dept. of CS, IIT Ropar, India
         <p>
-          In this project I implemented non local means based noise filtering for ultrasound images. This algorithm is specific to ultrasound speckle noise. The paper proposed a new similarity metric : Pearson Distance. A detailed information of the implementation is present in the <a href="pdf/nonlocal-speckle.pdf">report</a>. 
+          In this project I implemented non local means based noise filtering for ultrasound images. This algorithm is specific to ultrasound speckle noise. The paper proposed a new similarity metric : Pearson Distance. A detailed information of the implementation is present in the <a href="pdf/nonlocal-speckle.pdf">report</a>.
         </p>
         </p>
         </td>
       </tr>
 
       <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle><a href="https://github.com/pvskand/CTReconstruction">CT Reconstruction Algorithms - ART, SART, Back Projection and Filtered Back Projection></a></papertitle>  (October, 2017)
-          
+
           <br>
           Mentor : <a href="http://www.iitrpr.ac.in/cse/bathula">Dr. Deepti.R.Bhatula </a>, Dept. of CS, IIT Ropar, India
         <p>
-          In this work, I have implemented different Computed Tomography (CT) reconstruction algorithms. Majorly CT reconstructions involve 2 methods, Algebraic Reconstruction Algorithms and Back Projection Algorithms. I have implemented 2 variants of the first one [ART and SART] and 3 variants of the second one [simple BP and Filtered BP, Noise Filtered BP]. 
+          In this work, I have implemented different Computed Tomography (CT) reconstruction algorithms. Majorly CT reconstructions involve 2 methods, Algebraic Reconstruction Algorithms and Back Projection Algorithms. I have implemented 2 variants of the first one [ART and SART] and 3 variants of the second one [simple BP and Filtered BP, Noise Filtered BP].
         </p>
         </p>
         </td>
@@ -241,9 +299,9 @@
 
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle>Personality Assessment from Videos</papertitle>  (November, 2017) <i> [Course Final Project]</i>
-          
+
           <br>
           Mentor : <a href="https://sites.google.com/site/dhallabhinav/">Dr. Abhinav Dhall </a>, Dept. of CS, IIT Ropar, India
         <p>
@@ -256,12 +314,12 @@
       </tr>
 
       <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle><a href="https://github.com/pvskand/HybridImages-Collage">Creating Collage using Hybrid Images</a></papertitle>  (August, 2017)
-          
+
           <br>
           Mentor : <a href="https://sites.google.com/site/dhallabhinav/">Dr. Abhinav Dhall </a>, Dept. of CS, IIT Ropar, India
         <p>
@@ -273,12 +331,12 @@
       </tr>
 
       <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle> <a href="https://github.com/pvskand/VisualBag-Homogaphy">Visual Bag of Words & Homography Estimation </a></papertitle>  (August, 2017)
-          
+
           <br>
           Mentor : <a href="https://sites.google.com/site/dhallabhinav/">Dr. Abhinav Dhall </a>, Dept. of CS, IIT Ropar, India
         <p>
@@ -288,18 +346,18 @@
         </p>
         </td>
       </tr>
-      
-      
+
+
       </table>
       <table  width="100%" align="center" border="0" cellpadding="20">
       <h3>Digital Image Processing</h3>
         <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle><a href="https://github.com/pvskand/ImageMorphing">Image Morphing </a></papertitle>  (Aug-Nov, 2016)
-          
+
           <br>
           Mentor : <a href="http://www.iitrpr.ac.in/cse/puneet">Dr. Puneet Goyal </a>, Dept. of CS, IIT Ropar, India
         <p>
@@ -312,12 +370,12 @@
       <table  width="100%" align="center" border="0" cellpadding="20">
       <h3>Software Engineering</h3>
         <tr>
-        
+
         <td width="75%" valign="top">
         <p>
-          
+
           <papertitle><a href="https://github.com/pvskand/addictionRemoval">Addiction Removal Application</a> </papertitle>  (Aug-Nov, 2017) <i> [Course Final Project]</i>
-          
+
           <br>
           Mentor : <a href="http://www.iitrpr.ac.in/sodhi/">Dr. Balwinder Sodhi </a>, Dept. of CS, IIT Ropar, India
         <p>
@@ -361,7 +419,7 @@
         <br>
         <p align="right">
           <font size="2">
-          
+
           Template : <a href="http://jeffdonahue.com/">this</a>, <a href="https://jonbarron.info/">this</a>, <a href="http://people.eecs.berkeley.edu/~pathak/">this</a> and <a href="https://people.eecs.berkeley.edu/~sgupta/">this</a>
           <!--http://changyeobshin.com/, https://mbanani.github.io/, https://aseembits93.github.io, http://fuwei.us/, https://people.eecs.berkeley.edu/~haarnoja/, http://ishshah.me/, http://web.stanford.edu/~sfort1/-->
 	    </font>
@@ -373,5 +431,18 @@
     </td>
     </tr>
   </table>
+
+
+</table>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('cvprw18_abs');
+</script>
+
+
+
+
   </body>
 </html>
