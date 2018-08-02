@@ -113,7 +113,7 @@
         <tr><td>
           <heading>News</heading>
           <ul>
-            <li> [July, 2018] - <a href="#SASHIMI18">Paper</a> on MRI to FDG-PET: Cross-Modal Synthesis Using 3D U-Net For Multi-Modal Alzheimer's Classification accepted at <a target="_blank" href="https://www.miccai2018.org"> MICCAI </a> Workshop on <a target="_blank" href="http://www.sashimi.aramislab.fr/"> Simulation and Synthesis in Medical Imaging, 2018. </a>  </li>
+            <li> [July, 2018] - <a href="#MICCAI18">Paper</a> on MRI to FDG-PET: Cross-Modal Synthesis Using 3D U-Net For Multi-Modal Alzheimer's Classification accepted at <a target="_blank" href="https://www.miccai2018.org"> MICCAI </a> Workshop on <a target="_blank" href="http://www.sashimi.aramislab.fr/"> Simulation and Synthesis in Medical Imaging, 2018. </a>  </li>
             <li> [July, 2018] - <a href="#ACMMM18">Paper</a> on Deep Cross modal learning for Caricature Verification and Identification accepted at <a href="http://acmmm.org/">ACM Multimedia(MM), 2018.</a></li>
             <li> [April, 2018] - <a href="#CVPRW18">Paper</a> on Disguised Face Verification in the Wild accepted at CVPRW on <a href="http://iab-rubric.org/DFW/dfw.html"> Disguised Faces in the Wild, 2018. </a>  </li>
           </ul>
@@ -155,7 +155,42 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr><td><heading>Publications</heading></td></tr>
         </table>
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+            <tr>
+              <td width="33%" valign="top" align="center"><img src="images/miccai_1.png" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
+              <td width="67%" valign="top">
+                <p id="MICCAI18">
+                <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
+                <heading style="color:#1772d0;"> MRI to FDG-PET: Cross-Modal Synthesis Using 3D U-Net For Multi-Modal Alzheimer's Classification</heading></a><br>
+                Apoorva Sikka*, <strong>Skand Vishwanath Peri</strong>*, Deepti.R.Bathula<br>
+                <em>In MICCAI Workshop on Simulation and Synthesis in Medical Imaging</em>, 2018 (to appear)<br>
+                <!-- <strong style="color:red">Oral presentation <a href="https://vimeo.com/237270588" target="_blank" style="color:red">[video]</a></strong> -->
+                <!-- <strong style="color:red">Oral presentation</strong> -->
+                </p>
+
+                <div class="paper" id="miccai18">
+                <a href="javascript:toggleblock('miccai_abs')">abstract</a> |
+                <a shape="rect" href="javascript:togglebib('miccai18')" class="togglebib">bibtex</a> |
+                <a href="https://arxiv.org/abs/1807.10111" target="_blank">arXiv</a>
+                <br>
+
+                <p align="justify"> <i id="miccai_abs"> Recent studies suggest that combined analysis of Magnetic resonance imaging~(MRI) that measures brain atrophy and positron emission tomography~(PET) that quantifies hypo-metabolism provides improved accuracy in diagnosing Alzheimer's disease. However, such techniques are limited by the availability of corresponding scans of each modality. Current work focuses on a cross-modal approach to estimate FDG-PET scans for the given MR scans using a 3D U-Net architecture. The use of the complete MR image instead of a local patch based approach helps in capturing non-local and non-linear correlations between MRI and PET modalities. The quality of the estimated PET scans is measured using quantitative metrics such as MAE, PSNR and SSIM. The efficacy of the proposed method is evaluated in the context of Alzheimer's disease classification. The accuracy using only MRI is 70.18% while joint classification using synthesized PET and MRI is 74.43% with a p-value of 0.06. The significant improvement in diagnosis demonstrates the utility of the synthesized PET scans for multi-modal analysis.
+                </i></p>
+
+
+                <pre xml:space="preserve">
+                @inproceedings{MRI2PET_MICCAI,
+                    Author = {Sikka, Apoorva and Peri, Skand Vishwanath and Bathula, Deepti.R},
+                    Title = { MRI to FDG-PET: Cross-Modal Synthesis Using 3D U-Net For Multi-Modal Alzheimer's Classification},
+                    Booktitle = {MICCAI Workshop on Simulation and Synthesis in Medical Imaging},
+                    Year = {2018}
+                }
+                </pre>
+                </div>
+              </td>
+            </tr>
 
             <tr>
               <td width="33%" valign="top" align="center"><img src="images/cavinet.jpg" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
@@ -172,7 +207,7 @@
                 <div class="paper" id="acmmm18">
                 <a href="javascript:toggleblock('acmmm18_abs')">abstract</a> |
                 <a shape="rect" href="javascript:togglebib('acmmm18')" class="togglebib">bibtex</a> |
-                <a href="#">arXiv</a>
+                <a href="https://arxiv.org/abs/1807.11688" target="_blank">arXiv</a>
                 <br>
 
                 <p align="justify"> <i id="acmmm18_abs"> Learning from different modalities is a challenging task that involves determining a shared space that bridges the two modalities. In this paper, we look at the challenging problem of cross modal face verification and recognition between caricature and visual image modalities. Caricature is a modality with images having exaggerations of facial features of a person. Due to the significant variations in the caricatures, building vision models for recognizing and verifying data from this modality is an extremely challenging task. Visual images with significantly lesser amount of distortions can act as a bridge for the analysis of caricature modality. To advance the research in this field, we have created a publicly available large Caricature-VIsual dataset [CaVI] with images from both the modalities. The dataset captures the rich variations in the caricature of an identity. This paper presents the first cross modal architecture that is able to handle extreme distortions present in caricatures using a deep learning network that learns similar representations across the modalities. We use two convolutional networks along with transformations that are subjected to orthogonality constraints to capture the shared and modality specific representations. In contrast to prior research, our approach neither depends on manually extracted facial landmarks for learning the representations, nor on the identities of the person for performing verification. The learned shared representation achieves 91% accuracy for verifying unseen images and 75% accuracy on unseen identities. Further, recognizing the identity in the image by knowledge transfer using a combination of shared and modality specific representations, resulted in an unprecedented performance of 85% rank-1 accuracy for caricatures and 95% rank-1 accuracy for visual images.
@@ -480,6 +515,7 @@ hideallbibs();
 <script xml:space="preserve" language="JavaScript">
 hideblock('cvprw18_abs');
 hideblock('acmmm18_abs');
+hideblock('miccai_abs');
 </script>
 
 
