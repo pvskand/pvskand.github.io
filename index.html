@@ -121,6 +121,7 @@
         <tr><td>
           <heading>News</heading>
           <ul>
+              <li> [June, 2019] - <a href="#LSCCNN">Pre-print</a> on detecting persons in dense crowds is now on arXiv.</a></li>
               <li> [Dec, 2018] - CaVI Dataset consisting of Visual Images and Caricatures has been released. Please find the dataset <a target="_blank" href="https://github.com/lsaiml/CaVINet/tree/master/CaVI_Dataset"> here.</a></li>
             <li> [July, 2018] - <a href="#MICCAI18">Paper</a> on MRI to FDG-PET: Cross-Modal Synthesis Using 3D U-Net For Multi-Modal Alzheimer's Classification accepted at <a target="_blank" href="https://www.miccai2018.org"> MICCAI </a> Workshop on <a target="_blank" href="http://www.sashimi.aramislab.fr/"> Simulation and Synthesis in Medical Imaging, 2018. </a>  </li>
             <li> [July, 2018] - <a href="#ACMMM18">Paper</a> on Deep Cross modal learning for Caricature Verification and Identification accepted at <a href="http://acmmm.org/">ACM Multimedia(MM), 2018.</a></li>
@@ -131,13 +132,42 @@
 
       <!-- PUBLICATIONS -->
 
-
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr><td><heading>Publications</heading></td></tr>
-        </table>
-
+      </table>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
+              <tr>
+                  <td width="33%" valign="top" align="center"><img src="images/crowd.png" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
+                  <td width="67%" valign="top">
+                    <p id="LSCCNN">
+                    <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
+                    <heading style="color:#1772d0;"> Locate, Size and Count: Accurately Resolving People in Dense Crowds via Detection</heading></a><br>
+                    Deepak Babu Sam*, <strong>Skand Vishwanath Peri*</strong>, Mukuntha N.S, Amogh Kamath, R.Venkatesh Babu<br>
+                    <em>arXiv 1906.07538</em>, 2019.<br>
+                    </p>
+    
+                    <div class="paper" id="lsccnn">
+                    <a href="javascript:toggleblock('lsccnn_abs')">abstract</a> |
+                    <a shape="rect" href="javascript:togglebib('lsccnn_abs')" class="togglebib">bibtex</a> |
+                    <a href="https://arxiv.org/abs/1906.07538" target="_blank">arXiv</a> | 
+                    <a href="https://github.com/val-iisc/lsc-cnn" target="="_blank>code</a>
+                    <br>
+    
+                    <p align="justify"> <i id="lsccnn_abs"> We introduce a detection framework for dense crowd counting and eliminate the need for the prevalent density regression paradigm. Typical counting models predict crowd density for an image as opposed to detecting every person. These regression methods, in general, fail to localize persons accurate enough for most applications other than counting. Hence, we adopt an architecture that locates every person in the crowd, sizes the spotted heads with bounding box and then counts them. Compared to normal object or face detectors, there exist certain unique challenges in designing such a detection system. Some of them are direct consequences of the huge diversity in dense crowds along with the need to predict boxes contiguously. We solve these issues and develop our LSC-CNN model, which can reliably detect heads of people across sparse to dense crowds. LSC-CNN employs a multi-column architecture with top-down feedback processing to better resolve persons and produce refined predictions at multiple resolutions. Interestingly, the proposed training regime requires only point head annotation, but can estimate approximate size information of heads. We show that LSC-CNN not only has superior localization than existing density regressors, but outperforms in counting as well.
+                    </i></p>
+                    <pre xml:space="preserve">
+                        @article{LSCCNN19,
+                          Author = {Sam, Deepak Babu and Peri, Skand Vishwanath and Mukuntha .N .S ,  and Kamath, Amogh and Babu, R. Venkatesh},
+                          Title = {Locate, Size and Count: Accurately Resolving People in Dense Crowds via Detection},
+                          Journal = {arXiv:1906.07538},
+                          Year = {2019}
+                      }
+                    </pre>
+                    </div>
+                  </td>
+                </tr>
+    
+    
             <tr>
               <td width="33%" valign="top" align="center"><img src="images/miccai18.png" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
               <td width="67%" valign="top">
