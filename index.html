@@ -88,18 +88,17 @@
     </script>
         </p>
         <p>I am a visting researcher at Rutgers University working with <a href="http://www.sungjinahn.com/" target="_blank">Sungjin Ahn</a>.
-           Prior to this, I was a Research Assistant at the Indian Instiute of Science working with 
+           Prior to this, I was a Research Assistant at the Indian Institute of Science working with 
            <a href="http://cds.iisc.ac.in/faculty/venky/" target="_blank"> Venkatesh Babu</a>.
           I graduated with Bachelors of Technology (B.Tech) degree in Computer Science and Engineering from <a href="http://www.iitrpr.ac.in/" target="_blank">
             Indian Institute of Technology, Ropar, India</a>.
         </p>
         <p>
           I completed my Bachelor's Thesis in the field of Heterogenous Face Recognition and was advised by
-           <a href="http://cse.iitrpr.ac.in/ckn/index.html" target="_blank">Dr. C.K. Narayanan</a>. During my undergrad, I also had had the
-          opportunity of working with <a href="http://cse.iitrpr.ac.in/deepti/team/" target="_blank"> Dr. Deepti Bathula </a> and
+           <a href="http://cse.iitrpr.ac.in/ckn/index.html" target="_blank">Dr. Narayanan. C. Krishnan</a>. During my undergrad, I also worked with <a href="http://cse.iitrpr.ac.in/deepti/team/" target="_blank"> Dr. Deepti Bathula </a> and
           <a href="https://sites.google.com/site/dhallabhinav/" target="_blank"> Dr. Abhinav Dhall </a>.
           <br>
-          I'd previously interned at <a href="http://deepchem.io/" target="_blank"> DeepChem </a> (GSoC) and 
+          I previously interned at <a href="http://deepchem.io/" target="_blank"> DeepChem </a> (GSoC) and 
           <a href="http://val.serc.iisc.ernet.in/valweb/" target="_blank">Video Analytics Lab, IISc Bangalore</a>.
         </p>
 
@@ -116,34 +115,53 @@
       </tr>
       </table>
 
-      <!-- NEWS -->
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tr><td>
-          <heading>News</heading>
-          <ul>
-              <li> [June, 2019] - <a href="#LSCCNN">Pre-print</a> on detecting persons in dense crowds is now on arXiv.</a></li>
-              <li> [Dec, 2018] - CaVI Dataset consisting of Visual Images and Caricatures has been released. Please find the dataset <a target="_blank" href="https://github.com/lsaiml/CaVINet/tree/master/CaVI_Dataset"> here.</a></li>
-            <li> [July, 2018] - <a href="#MICCAI18">Paper</a> on MRI to FDG-PET: Cross-Modal Synthesis Using 3D U-Net For Multi-Modal Alzheimer's Classification accepted at <a target="_blank" href="https://www.miccai2018.org"> MICCAI </a> Workshop on <a target="_blank" href="http://www.sashimi.aramislab.fr/"> Simulation and Synthesis in Medical Imaging, 2018. </a>  </li>
-            <li> [July, 2018] - <a href="#ACMMM18">Paper</a> on Deep Cross modal learning for Caricature Verification and Identification accepted at <a href="http://acmmm.org/">ACM Multimedia(MM), 2018.</a></li>
-            <li> [April, 2018] - <a href="#CVPRW18">Paper</a> on Disguised Face Verification in the Wild accepted at CVPRW on <a href="http://iab-rubric.org/DFW/dfw.html"> Disguised Faces in the Wild, 2018. </a>  </li>
-          </ul>
-        </td></tr>
-      </table>
 
       <!-- PUBLICATIONS -->
 
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr><td><heading>Publications</heading></td></tr>
+          <tr><td><heading>Pre-Prints / Publications</heading></td></tr>
       </table>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            
+          
           <tr>
-              <td width="33%" valign="top" align="center"><img src="images/crowd.png" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
+              <td width="33%" valign="top" align="center"><img src="images/ddcnn.png" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
+              <td width="67%" valign="top">
+                <p id="DDCNN">
+                <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
+                <heading style="color:#1772d0;">Going Beyond the Regression Paradigm with Accurate Dot Prediction for Dense Crowds</heading></a><br>
+                Deepak Babu Sam*, <strong>Skand Vishwanath Peri*</strong>, Mukuntha Narayanan Sundararaman, R. Venkatesh Babu<br>
+                <em>(* Equal Contribution)</em> <br>
+                <em>In Winter Conference on Applications of Computer Vision (WACV)</em>, 2020.<br>
+                </p>
+
+                <div class="paper" id="ddcnn">
+                <a href="javascript:toggleblock('ddcnn_abs')">abstract</a> |
+                <a shape="rect" href="javascript:togglebib('ddcnn')" class="togglebib">bibtex</a> |
+                <a href="#">paper (coming soon)</a> |
+                <a href="#">supplementary (coming soon)</a> 
+                <br>
+
+                <p align="justify"> <i id="ddcnn_abs"> We propose a radical shift to the paradigm of density regression widely being employed for tackling crowd counting. In the prevalent regression approach, a model is trained for mapping images to its crowd density rather than counting by detecting every person. This framework is motivated from the difficulty to discriminate humans in highly dense crowds where unfavorable perspective, occlusion and clutter are prevalent. Though regression methods estimate overall crowd counts pretty well, localization of individual persons suffers and varies considerably across the entire density spectrum. Moreover, individual detection of people aids more explainable practical systems than predicting blind crowd count or density map. Hence, we move away from density regression and reformulate the task as localized dot prediction in dense crowds. Our dot detection model, DD-CNN, is trained for pixel-wise binary classification to detect people instead of regressing local crowd density. In order to handle severe scale variation and detect people of all scales with accurate dots, we use a novel multi-scale architecture which does not require any ground truth scale information. This training regime, which incorporates top-down feedback, helps our model to localize people in sparse as well as dense crowds. Our model delivers superior counting performance on major crowd datasets. We also evaluate on some additional metrics and evidence superior localization of the dot detection formulation.
+                </i></p>
+                <pre xml:space="preserve">
+                    @inproceedings{DDCNN20,
+                      Author = {Sam, Deepak Babu and Peri, Skand Vishwanath and M. N. Sundararaman , and Babu, R. Venkatesh},
+                      Title = {Going Beyond the Regression Paradigm with Accurate Dot Prediction for Dense Crowds},
+                      Booktitle = {WACV},
+                      Year = {2020}
+                  }
+                </pre>
+                </div>
+              </td>
+            </tr>
+
+          <tr>
+              <td width="33%" valign="top" align="center"><img src="images/lsccnn.png" style="border-color:black" width="220" height="150"><hr style="height:0pt; visibility:hidden; margin:0"/>
               <td width="67%" valign="top">
                 <p id="LSCCNN">
                 <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
                 <heading style="color:#1772d0;"> Locate, Size and Count: Accurately Resolving People in Dense Crowds via Detection</heading></a><br>
-                Deepak Babu Sam*, <strong>Skand Vishwanath Peri*</strong>, Mukuntha N.S, Amogh Kamath, R.Venkatesh Babu<br>
+                Deepak Babu Sam*, <strong>Skand Vishwanath Peri*</strong>, Mukuntha Narayanan Sundararaman, Amogh Kamath, R. Venkatesh Babu<br>
                 <em>(* Equal Contribution)</em> <br>
                 <em>arXiv 1906.07538</em>, 2019.<br>
                 </p>
@@ -159,7 +177,7 @@
                 </i></p>
                 <pre xml:space="preserve">
                     @article{LSCCNN19,
-                      Author = {Sam, Deepak Babu and Peri, Skand Vishwanath and Mukuntha .N .S ,  and Kamath, Amogh and Babu, R. Venkatesh},
+                      Author = {Sam, Deepak Babu and Peri, Skand Vishwanath and M. N. Sundararaman,  and Kamath, Amogh and Babu, R. Venkatesh},
                       Title = {Locate, Size and Count: Accurately Resolving People in Dense Crowds via Detection},
                       Journal = {arXiv:1906.07538},
                       Year = {2019}
@@ -256,7 +274,8 @@
                 <div class="paper" id="cvprw18">
                 <a href="javascript:toggleblock('cvprw18_abs')">abstract</a> |
                 <a shape="rect" href="javascript:togglebib('cvprw18')" class="togglebib">bibtex</a> |
-                <a href="https://arxiv.org/abs/1804.09669" target="_blank">arXiv</a>
+                <a href="https://arxiv.org/abs/1804.09669" target="_blank">arXiv</a> |
+                <a href="https://github.com/pvskand/DisguiseNet" target="_blank">code</a>
                 <br>
 
                 <p align="justify"> <i id="cvprw18_abs">This paper describes our approach for the Disguised Faces in the Wild (DFW) 2018 challenge. The task here is to verify the identity of a person among disguised and impostors images. Given the importance of the task of face verification it is essential to compare methods across a common platform. Our approach is based on VGG-face architecture paired with Contrastive loss based on cosine distance metric. For augmenting the data set, we source more data from the internet. The experiments show the effectiveness of the approach on the DFW data. We show that adding extra data to the DFW dataset with noisy labels also helps in increasing the generalization performance of the network. The proposed network achieves 27.13% absolute increase in accuracy over the DFW baseline.</i></p>
@@ -329,7 +348,7 @@
 
 
           <br>
-          Mentor : <a href="http://cse.iitrpr.ac.in/ckn/home.html">Dr C.K.Narayanan</a>, Dept. of CS, IIT Ropar
+          Mentor : <a href="http://cse.iitrpr.ac.in/ckn/home.html">Dr Narayanan.C.Krishnan</a>, Dept. of CS, IIT Ropar
         <p>
           Developed a GUI version of <a hred="http://cse.iitrpr.ac.in/ckn/Resources/math-viz/svd.html"> Singular Value Decomposition</a>, <a href="http://cse.iitrpr.ac.in/ckn/Resources/math-viz/gradient.html">Gradient Descent</a> and <a href="http://cse.iitrpr.ac.in/ckn/Resources/math-viz/lagrange.html">Lagrange Multipliers</a> depicting their geometrical interpretation. Chart.js, Plotly.js, Numeric.js and Algebra.js libraries were used to develop the tool.
 
@@ -548,6 +567,7 @@ hideblock('cvprw18_abs');
 hideblock('acmmm18_abs');
 hideblock('miccai_abs');
 hideblock('lsccnn_abs');
+hideblock('ddcnn_abs');
 </script>
 
 
