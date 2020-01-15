@@ -170,8 +170,8 @@
                 <div class="paper" id="ddcnn">
                 <a href="javascript:toggleblock('ddcnn_abs')">abstract</a> |
                 <a shape="rect" href="javascript:togglebib('ddcnn')" class="togglebib">bibtex</a> |
-                <a href="#">paper (coming soon)</a> |
-                <a href="#">supplementary (coming soon)</a> 
+                <a href="pdf/wacv/DDCNN_WACV_2020.pdf">paper</a>
+                <!-- <a href="#">supplementary (coming soon)</a>  -->
                 <br>
 
                 <p align="justify"> <i id="ddcnn_abs"> We propose a radical shift to the paradigm of density regression widely being employed for tackling crowd counting. In the prevalent regression approach, a model is trained for mapping images to its crowd density rather than counting by detecting every person. This framework is motivated from the difficulty to discriminate humans in highly dense crowds where unfavorable perspective, occlusion and clutter are prevalent. Though regression methods estimate overall crowd counts pretty well, localization of individual persons suffers and varies considerably across the entire density spectrum. Moreover, individual detection of people aids more explainable practical systems than predicting blind crowd count or density map. Hence, we move away from density regression and reformulate the task as localized dot prediction in dense crowds. Our dot detection model, DD-CNN, is trained for pixel-wise binary classification to detect people instead of regressing local crowd density. In order to handle severe scale variation and detect people of all scales with accurate dots, we use a novel multi-scale architecture which does not require any ground truth scale information. This training regime, which incorporates top-down feedback, helps our model to localize people in sparse as well as dense crowds. Our model delivers superior counting performance on major crowd datasets. We also evaluate on some additional metrics and evidence superior localization of the dot detection formulation.
