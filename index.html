@@ -96,8 +96,9 @@
               [6, 22, 15, 18, 19, 4, 11, 1, 17, 3, 16, 13, 10, 8, 21, 14, 2, 20, 5, 9, 7, 12]);
     </script>
         </p>
-        <p>I am a visiting researcher at Rutgers University working with <a href="http://www.sungjinahn.com/" target="_blank">Sungjin Ahn</a>.
-           Prior to this, I was a Research Assistant at the Indian Institute of Science working with 
+        <p>I am an incoming Ph.D. student at Oregon State University. My primary research interests lie at the intersection of Machine Learning, Robotics and Cognitive Science. <br> <br>
+        Prior to this, I was working with <a href="http://www.sungjinahn.com/" target="_blank">Sungjin Ahn</a> on object-centric world models and reinforcement learning.
+        Earlier, I was a Research Assistant at the Indian Institute of Science working with 
            <a href="http://cds.iisc.ac.in/faculty/venky/" target="_blank"> Venkatesh Babu</a>.
           I graduated with Bachelors of Technology (B.Tech) degree in Computer Science and Engineering from <a href="http://www.iitrpr.ac.in/" target="_blank">
             Indian Institute of Technology, Ropar, India</a>.
@@ -133,10 +134,40 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             
             <tr>
+              <td width="33%" valign="top" align="center"><img src="images/swb.png" style="border-color:black" width="200" height="200"><hr style="height:0pt; visibility:hidden; margin:0"/>
+              <td width="67%" valign="top">
+                <p id="SWB">
+                <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
+                <heading style="color:#1772d0;">Structured World Belief for Reinforcement Learning in POMDP
+                </heading></a><br>
+                Gautam Singh, <strong>Skand</strong>, Junghyun Kim, Hyunseok Kim, Sungjin Ahn<br>
+                <em>In International Conference on Machine Learning (ICML)</em>, 2021.<br>
+                </p>
+
+                <div class="paper" id="swb">
+                <a href="javascript:toggleblock('swb_abs')">abstract</a> |
+                <a shape="rect" href="javascript:togglebib('swb')" class="togglebib">bibtex</a> |
+                <a href="pdf/SWB.pdf">paper</a>
+                <br>
+
+                <p align="justify"> <i id="swb_abs"> Object-centric world models provide structured representation of the scene and can be an important backbone in reinforcement learning and planning. However, existing approaches suffer in partially-observable environments due to the lack of belief states. In this paper, we propose Structured World Belief, a model for learning and inference of object-centric belief states. Inferred by Sequential Monte Carlo (SMC), our belief states provide multiple object-centric scene hypotheses. To synergize the benefits of SMC particles with object representations, we also propose a new object-centric dynamics model that considers the inductive bias of object permanence. This enables tracking of object states even when they are invisible for a long time. To further facilitate object tracking in this regime, we allow our model to attend flexibly to any spatial location in the image which was restricted in previous models. In experiments, we show that object-centric belief provides a more accurate and robust performance for filtering and generation. Furthermore, we show the efficacy of structured world belief in improving the performance of reinforcement learning, planning and supervised reasoning.
+                </i></p>
+                <pre xml:space="preserve">
+                    @inproceedings{SWB21,
+                      Author = {Singh, Gautam and Skand and Kim, Junghyun and Kim, Hyunseok and Ahn, Sungjin},
+                      Title = {Structured World Belief for Reinforcement Learning in POMDP},
+                      Booktitle = {ICML},
+                      Year = {2021}
+                  }
+                </pre>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
               <td width="33%" valign="top" align="center"><img src="images/gswm.gif" style="border-color:black" width="220" height="120"><hr style="height:0pt; visibility:hidden; margin:0"/>
               <td width="67%" valign="top">
                 <p id="GSWM">
-                <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
                 <heading style="color:#1772d0;">Improving Generative Imagination in Object-Centric World Models
                 </heading></a><br>
                 Zhixuan Lin, Yi-Fu Wu, <strong>Skand</strong>, Bofeng Fu, Jindong Jiang, Sungjin Ahn<br>
@@ -297,7 +328,7 @@
               <td width="67%" valign="top">
                 <p id="ACMMM18">
                 <heading style="color:#1772d0;">Deep Cross modal learning for Caricature Verification and Identification (CaVINet)</heading></a><br>
-                Jatin Garg*, <strong>Skand Vishwanath Peri*</strong>, Himanshu Tolani*, Narayanan.C.Krishnan<br>
+                Jatin Garg*, <strong>Skand Peri*</strong>, Himanshu Tolani*, Narayanan.C.Krishnan<br>
                 <em>(* Equal Contribution, and names sorted alphabetically)</em> <br>
                 <em>ACM Multimedia</em>, 2018.<br>
                 </p>
@@ -364,220 +395,6 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td>
-        <heading>Internships</heading>
-        </td>
-      </tr>
-      </table>
-      <table width="100%" align="center" border="0" cellpadding="20">
-
-        <tr>
-
-          <td width="75%" valign="top">
-          <p>
-
-            <papertitle> <a href="https://medium.com/@blog_945/imaging-tools-google-summer-of-code-2018-8cdd71fa3a20" target="_blank">Google Summer of Code Intern </a> - <a href="http://deepchem.io/" target="_blank">DeepChem</a> (Open Chemistry)</papertitle>  (Summer 2018)
-
-            <br>
-            Mentor : <a href="http://rbharath.github.io/about/" target="_blank">Bharath Ramsundar</a> - CTO, Computable Labs and <a href="http://karlleswing.com/" target="_blank"> Karl Leswing </a> - Tech Lead, Schrodinger.
-          <p>
-            I had worked on importing Imaging Tools to DeepChem library. In specific I implemented U-Net architecture, ported the ResNet-50 architecture
-            and also implemented Imaging Data Transforms API to enable image transformations that help in data augmentation of datasets.
-          </p>
-          </p>
-          </td>
-        </tr>
-
-      <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle>HDR Deghosting</papertitle>  (Summer 2017)
-
-          <br>
-          Mentor : <a href="http://www.serc.iisc.ernet.in/~venky/">Dr R.Venkatesh Babu</a>, Dept. of Computational and Data Sciences, IISc Bangalore, India
-        <p>
-          My work at IISc was focussed mainly on generating Deghosted High Dynamic Range images. I spent the initial half of my internship on segmenting moving objects in varying illumination images and the rest half was spent on registering images under high illumination variance.
-
-        </p>
-        </p>
-        </td>
-      </tr>
-      <tr>
-
-        <td width="75%" valign="top">
-        <p>
-          <a href="https://pvskand.github.io/Visualizations">
-          <papertitle>Mathematical Visual Simulators</papertitle> </a> (Summer 2016)
-
-
-          <br>
-          Mentor : <a href="http://cse.iitrpr.ac.in/ckn/home.html">Dr Narayanan.C.Krishnan</a>, Dept. of CS, IIT Ropar
-        <p>
-          Developed a GUI version of <a hred="http://cse.iitrpr.ac.in/ckn/Resources/math-viz/svd.html"> Singular Value Decomposition</a>, <a href="http://cse.iitrpr.ac.in/ckn/Resources/math-viz/gradient.html">Gradient Descent</a> and <a href="http://cse.iitrpr.ac.in/ckn/Resources/math-viz/lagrange.html">Lagrange Multipliers</a> depicting their geometrical interpretation. Chart.js, Plotly.js, Numeric.js and Algebra.js libraries were used to develop the tool.
-
-        </p>
-        </p>
-        </td>
-      </tr>
-      </table>
-
-     <!--
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td>
-        <heading>Course Projects</heading>
-        </td>
-      </tr>
-      </table>
-      <table  width="100%" align="center" border="0" cellpadding="20">
-      <h3>Bio Medical Image Processing</h3>
-        <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle>Alzhemizer's Classification using MRI and PET images</papertitle>  (November, 2017) <i> [Course Final Project]</i>
-
-          <br>
-          Mentor : <a href="http://www.iitrpr.ac.in/cse/bathula">Dr. Deepti.R.Bhatula </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          In this project a localised deep neural net based architecture with 3D Convolution to predict if the has Alzhemizer's Disease  using  PET/MRI scans of the person's brain was proposed. [ Code will be made public once the corresponding paper is published. ]
-        </p>
-        </p>
-        </td>
-      </tr>
-
-      <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle><a href="https://github.com/pvskand/NLMeansSpeckleFilter"> Nonlocal Means-Based Speckle Filtering for Ultrasound Images</papertitle>  </a>(September, 2017)
-
-          <br>
-          Mentor : <a href="http://www.iitrpr.ac.in/cse/bathula">Dr. Deepti.R.Bhatula </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          In this project I implemented non local means based noise filtering for ultrasound images. This algorithm is specific to ultrasound speckle noise. The paper proposed a new similarity metric : Pearson Distance. A detailed information of the implementation is present in the <a href="pdf/nonlocal-speckle.pdf">report</a>.
-        </p>
-        </p>
-        </td>
-      </tr>
-
-      <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle><a href="https://github.com/pvskand/CTReconstruction">CT Reconstruction Algorithms - ART, SART, Back Projection and Filtered Back Projection></a></papertitle>  (October, 2017)
-
-          <br>
-          Mentor : <a href="http://www.iitrpr.ac.in/cse/bathula">Dr. Deepti.R.Bhatula </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          In this work, I have implemented different Computed Tomography (CT) reconstruction algorithms. Majorly CT reconstructions involve 2 methods, Algebraic Reconstruction Algorithms and Back Projection Algorithms. I have implemented 2 variants of the first one [ART and SART] and 3 variants of the second one [simple BP and Filtered BP, Noise Filtered BP].
-        </p>
-        </p>
-        </td>
-      </tr>
-
-      <tr>
-      </table>
-
-      <table  width="100%" align="center" border="0" cellpadding="20">
-      <h3>Computer Vision</h3>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle>Personality Assessment from Videos</papertitle>  (November, 2017) <i> [Course Final Project]</i>
-
-          <br>
-          Mentor : <a href="https://sites.google.com/site/dhallabhinav/">Dr. Abhinav Dhall </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          The main aim of this project was to assess the <strong><a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Big 5 personality traits</a></strong> from videos. We came up with a novel approach in which we could regress the 5 traits using the background as well as the facial features. More information about the methodology can be found <a href="pdf/big5.pdf"> here </a>.
-          [Code will be published once the corresponding paper gets accepted.]
-
-        </p>
-        </p>
-        </td>
-      </tr>
-
-      <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle><a href="https://github.com/pvskand/HybridImages-Collage">Creating Collage using Hybrid Images</a></papertitle>  (August, 2017)
-
-          <br>
-          Mentor : <a href="https://sites.google.com/site/dhallabhinav/">Dr. Abhinav Dhall </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          In this I used the concept of Hybrid images as presented in <i> Olivia et.al, SIGGRAPH 06</i> to create collages. After applying the hybrid image technique the images were blended to show smooth transition from one to the other. Detailed information can be found in <a href="pdf/hybrid.pdf"> this</a> report.
-
-        </p>
-        </p>
-        </td>
-      </tr>
-
-      <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle> <a href="https://github.com/pvskand/VisualBag-Homogaphy">Visual Bag of Words & Homography Estimation </a></papertitle>  (August, 2017)
-
-          <br>
-          Mentor : <a href="https://sites.google.com/site/dhallabhinav/">Dr. Abhinav Dhall </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          Visual bag of words on the <a href="https://github.com/zalandoresearch/fashion-mnist"> Fashion MNIST </a> data set was implemented using k-means clustering. Also Mosaic was created using homography estimation(projective transformation), warping and then blending of the images. The technical report of this can be found <a href="pdf/bow.pdf"> here </a>.
-
-        </p>
-        </p>
-        </td>
-      </tr>
-
-
-      </table>
-      <table  width="100%" align="center" border="0" cellpadding="20">
-      <h3>Digital Image Processing</h3>
-        <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle><a href="https://github.com/pvskand/ImageMorphing">Image Morphing </a></papertitle>  (Aug-Nov, 2016)
-
-          <br>
-          Mentor : <a href="http://www.iitrpr.ac.in/cse/puneet">Dr. Puneet Goyal </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          We morphed 2 images by using Delaunay Triangulation technique. We take the tie points as input from the user and then compute the affine transformation from one image to the other and then blend the two images to get a smooth transition from one image to the other. This process can be perfomed with multiple images (we have performed it with 2 and 3 images).
-        </p>
-        </p>
-        </td>
-      </tr>
-      </table>
-      <table  width="100%" align="center" border="0" cellpadding="20">
-      <h3>Software Engineering</h3>
-        <tr>
-
-        <td width="75%" valign="top">
-        <p>
-
-          <papertitle><a href="https://github.com/pvskand/addictionRemoval">Addiction Removal Application</a> </papertitle>  (Aug-Nov, 2017) <i> [Course Final Project]</i>
-
-          <br>
-          Mentor : <a href="http://www.iitrpr.ac.in/sodhi/">Dr. Balwinder Sodhi </a>, Dept. of CS, IIT Ropar, India
-        <p>
-          Addiction Removal is a platform for addicts to get rid of their addiction with help of other people who have already got rid of their addictions. Go ahead, find your mentor and read the motivating blogs. The development of the software is present in <a href="https://sites.google.com/a/iitrpr.ac.in/addiction-removal/home?pli=1">this</a> google site.
-        </p>
-        </p>
-        </td>
-      </tr>
-      </table>
-      -->
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td>
         <br>
         <p align="right">
           <font size="2">
@@ -606,6 +423,7 @@ hideblock('lsccnn_abs');
 hideblock('ddcnn_abs');
 hideblock('space_abs');
 hideblock('gswm_abs');
+hideblock('swb_abs');
 </script>
 
 
